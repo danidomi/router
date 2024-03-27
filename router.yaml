@@ -1,12 +1,8 @@
 sandbox:
   enabled: true
 supergraph:
-  introspection: true
+  introspection: false
   listen: 0.0.0.0:${env.PORT:-4000}
-  query_planning:
-    cache:
-      in_memory:
-        limit: 512 # This is the default value
 homepage:
   enabled: false
 include_subgraph_errors:
@@ -19,8 +15,3 @@ limits:
   max_height: 200
   max_aliases: 30
   max_root_fields: 20
-
-telemetry:
-  instrumentation:
-    spans:
-      mode: spec_compliant

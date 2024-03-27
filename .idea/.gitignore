@@ -2,3 +2,5 @@
 !.gitignore
 !jsonSchemas.xml
 !graphql-settings.xml
+# GitHub Copilot persisted chat sessions
+/copilot/chatSessions
